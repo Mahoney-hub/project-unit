@@ -1,0 +1,33 @@
+.animation {
+  display: block;
+  border: 3px solid #FFFFFF;
+  border-radius: 30px;
+  height: 45px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 8px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.animation span {
+  display: block;
+  animation: scroll 2s running infinite both;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 10px;
+  width: 4px;
+  margin: 6px auto;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
